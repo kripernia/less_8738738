@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal page</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #6dd5fa, #2980b9);
+            color: #1a1a1a;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* НОВЫЕ КНОПКИ */
+        .nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .nav a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 22px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            transform: translateY(-3px) scale(1.05);
+            background: white;
+            color: #2980b9;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* СЕКЦИИ */
+        section {
+            background: rgba(255,255,255,0.85);
+            padding: 30px;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        /* КАРТИНКА */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 250px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+        li {
+            margin: 8px 0;
+            transition: transform 0.2s;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+        }
+        .memes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .memes img {
+            max-width: 170px;
+            border-radius: 15px;
+            transition: all 0.3s;
+        }
+
+        .memes img:hover {
+            transform: rotate(3deg) scale(1.1);
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: rgba(255,255,255,0.5);
+            margin: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="content">
+    <div class="nav">
+        <a href="#main"> Главная</a>
+        <a href="#facts"> Факты</a>
+        <a href="#memes"> Мемы</a>
+        <a href="#quotes"> Цитаты</a>
+    </div>
+
+
+    <section id="main">
+        <h1>Привет!</h1>
+        <h2>Это моя  страница</h2>
+
+        <img src="images/goose.jpeg" alt="Гусь">
+
+        <p style="text-align:center; font-size:18px;">
+            Меня зовут Диана
+        </p>
+
+        <ul>
+            <li> Люблю компьютерные игры</li>
+            <li> люблю заниматься программированием</li>
+            <li> Слушаю музыку</li>
+            <li> Смотрю аниме</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="facts">
+        <h1>Факты обо мне</h1>
+
+        <ol>
+            <li>У меня в Minecraft 100 часов</li>
+            <li>Учусь веб-разработке</li>
+            <li>Играю в баскетбол</li>
+            <li>Люблю играть в куклы</li>
+            <li>Хочу играть в майн каждый день</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section id="memes">
+        <h1>Мои любимые мемы</h1>
+
+        <div class="memes">
+            <img src="images/meme1.jpeg" alt="">
+            <img src="images/meme2.jpeg" alt="">
+            <img src="images/meme3.png" alt="">
+            <img src="images/meme4.jpeg" alt="">
+        </div>
+    </section>
+
+    <hr>
+    <section id="quotes">
+        <h1>Любимые цитаты</h1>
+
+        <ul>
+            <li>Путешествие в сотни миль начинается с одного шага.</li>
+            <li>«Сначала работает — потом красиво»</li>
+            <li>«Разделите каждую сложную задачу на столько частей, сколько возможно и необходимо для её решения.</li>
+            <li>То, что ты не хочешь иметь завтра, отбрось сегодня, а то, что хочешь иметь завтра, приобретай сегодня</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
